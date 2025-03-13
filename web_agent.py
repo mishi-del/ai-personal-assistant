@@ -22,5 +22,5 @@ def send_message():
     return jsonify({'response': 'No message received'})
 
 if __name__ == '__main__':
-    # Run on all interfaces, port 5000
-    app.run(host='0.0.0.0', port=5000, debug=True) 
+    # Run on localhost, port 5000
+    app.run(host='127.0.0.1', port=5000, debug=True) 
